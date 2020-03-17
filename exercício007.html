@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Pokemon</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <h1>Escolha seu Pokemon</h1>
+    </header>
+    <section>
+        <div><!--1° div-->
+            <p>Digite o nome do Pokemon:
+            <input type="text" name="ftext" id="ftext"> 
+            </p>  
+            <p> Sexo:
+                <input type="radio" name="radsex" id="mach" checked>
+                <label for="mach"> Macho</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem"> Fêmea</label>                
+            </p>
+            <p>Escolha entre 3 opções de Pokemons, 1, 2 ou 3!</p>
+            <P>
+                <input type="button" value="Escolher" onclick='btnEscolher()'> 
+            </P>            
+        </div>
+
+        <div id = 'res'> <!--2° div-->            
+            <p id ='resposta'></p>
+            <img id = 'imagem' src="pokebola.png" alt="">
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Pokemons</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
